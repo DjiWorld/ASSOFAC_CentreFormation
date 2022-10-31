@@ -1,0 +1,334 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style : none;
+    scroll-behavior: smooth;
+
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* header _____________________________________________________________________*/
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/sallecours.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+.bg{
+    height: 70vh;
+    width: 30vw;
+    background-size: cover;
+    /* min-height: 90vh; */
+    background-attachment:fixed;
+}
+
+/* navbar___________________________________________________________________ */
+.navbar{
+    position:relative;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color:rgba(102, 201, 214, 0.4);
+    
+}
+
+.navbar a{
+    color:white;
+
+}
+
+
+.navbar .logo1{
+    position: relative;
+    width: 150px;
+    height: 75px;
+
+}
+
+.navbar .navlinks ul{ 
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+  
+}
+
+.navbar .navlinks ul li{ 
+    margin: 0 60px;
+  
+}
+
+
+
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;  
+
+       
+}
+
+nav a:hover{
+    background-color: rgba(102, 214, 177, 0.8);
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+/* PRESENTATION _________________________________________________________ */
+
+#presentation {
+    background-color: white;
+}
+
+#presentation .container{
+    padding: 50px 15px;
+    max-width: 1500px ;
+    margin: 73px auto;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#presentation .container .left{
+    width: 70%;
+    margin-left: 50px;
+}
+
+#presentation .container .left h3{
+    font-size: 3em;
+    color: #62B7CB;
+    margin-bottom: 25px;
+    margin-top: 25px; 
+}
+
+#presentation .container .left p{
+    font-size: 1.6rem;
+}
+
+#presentation .container .right{
+    max-width: 656px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 270px;
+}
+
+
+#presentation .container .right .icon{
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 11px 11px 22px #c7c7c7, inset -11px -11px 22px #77f7db;
+}
+
+#presentation .container .right .icon span{
+    font-size: 2em;
+}
+
+#presentation .container .right .icon h4{
+    font-size: 0.5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* FORMATION________________________ */
+
+
+.formations {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    gap: 49px;
+    margin-bottom: 102px; 
+    
+}
+
+.formations img{
+    border-radius: 10%;
+    
+}
+
+    
+.formcard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10%;
+
+   
+}
+    
+  
+  .formcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .containtext {
+    padding: 2px 16px;
+  }
+
+  details summary{
+    color: #62B7CB;
+  }
+
+
+/* EQUIPE PEDAGOGIQUE _________________________________________________________ */
+.team{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;  
+}
+
+
+
+.equipeh2 h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+
+
+.card{
+    float: left;
+    flex-direction: row;
+    width: 390px;
+    justify-content: space-around;
+}
+    
+
+.container .card img{
+    height: 280px;
+    padding: 60px; 
+}
+
+
+
+.img-box{
+    margin-bottom: -50px;
+}
+
+.text-box h3{
+    display: flex;
+    justify-content: space-around;
+    text-align:left ;
+    text-align-last: right;
+    font-size: 35px;
+    margin: 15px;    
+}
+
+.text-box p{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+
+
+#formation h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+
+#formation .container{
+    margin-left: 100px;
+    display: flex;
+    /* justify-content: center; */
+ }
+ .img-box-1{
+    flex-grow: 2;
+ }
+
+
+ /* NOUS CONTACTER_______________ */
+ input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .formulaire {
+    border-radius: 32px;
+    background-color: #649B98;
+    background-image: url(/images/fond-bleu.jpg);
+    padding: 51px;
+    margin: 78px;
+    display: grid;
+    height: 397px;
+    width: 876px;
+}
+
+
+  .img-box2 {
+    height: 511px;
+    width: 682px;
+    position: absolute;
+    right: 161px;
+    margin: -127px;
+}
+
+
+/* FOOTER__________________________________________________________ */
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #58A0B6;
+    color: white;
+  }
+
+  h2.logofoot {
+    padding: -103px;
+    margin: -77px;
+    margin-top: -99px;
+  }
+
+  h2.logofoot img{
+    margin: 21px;
+    padding: -31px;
+  }
